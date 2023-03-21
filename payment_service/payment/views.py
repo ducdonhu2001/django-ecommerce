@@ -32,8 +32,9 @@ def get_payment(request):
     if uname and prodid and price and quantity and mode_of_payment and mobile:
         ### It will call the store data function.
         respdata = store_data(uname, prodid, price, quantity, mode_of_payment, mobile)
-        respdata2 = ship_update(uname)
+        # respdata2 = ship_update(uname)
         ### If it returns value then will show success.
+        print(respdata)
         if respdata:
             resp['status'] = 'Success'
             resp['status_code'] = '200'

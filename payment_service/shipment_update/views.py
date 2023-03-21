@@ -18,7 +18,7 @@ def shipment_details_update(uname):
     ship_dict['Transaction Id'] = data['id']
     ship_dict['Mobile Number'] = data['mobile']
     ### It is used for getting the user info.
-    url = 'http://127.0.0.1:8000/userinfo/'
+    url = 'http://127.0.0.1:8001/userinfo/'
     d1 = {}
     d1["User Name"] = data['username']
     data = json.dumps(d1)
